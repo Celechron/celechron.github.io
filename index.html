@@ -1,67 +1,134 @@
 <!DOCTYPE html>
 <html lang="">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Celechron-时间管理器</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Celechron - 时间管理器</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<body>
+  <body style="min-height: 100vh">
+    <section class="hero is-medium" style="background-color: #ffffff">
+      <div class="hero-head">
+        <nav
+          class="navbar"
+          role="navigation"
+          aria-label="main navigation"
+          style="background-color: #ffffff"
+        >
+          <div class="navbar-brand">
+            <a class="navbar-item" href="">
+              <img src="img/navbar_logo.png" height="28" />
+            </a>
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
 
-<section class="hero is-fullheight" style="background: linear-gradient(115deg,#73f4ff,#578ce8)">
-  <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #FFFFFF;">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="">
-        <img src="img/navbar_logo.png" height="28">
-      </a>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href=""> 首页 </a>
 
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="">
-          首页
-        </a>
+              <a class="navbar-item"> 更新日志 </a>
+            </div>
 
-        <a class="navbar-item">
-          更新日志
-        </a>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons"></div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
 
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
+      <div class="hero-body">
+        <div class="has-text-centered" style="width: 750px; margin: auto">
+          <img src="icon.png" width="200px" style="float: left" />
+          <div style="padding: 28px 0">
+            <p
+              class="title"
+              style="
+                font-size: 100px;
+                font-family: 'Fira Sans Extra Condensed', sans-serif;
+                font-weight: 300;
+                letter-spacing: 10px;
+                color: #66aaf5;
+              "
+            >
+              Celechron
+            </p>
+            <p class="subtitle">服务于浙大学生的时间管理器</p>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <p class="title" style="font-size: 112px">
-        Celechron
-      </p>
-      <p class="subtitle">
-        服务于浙大学生的时间管理器
-      </p>
-      <div class="buttons is-centered">
-        <a class="button is-primary is-large" href="https://github.com/Celechron/Celechron">
-          <strong></strong>
-        </a>
+
+      <div class="hero-foot"></div>
+    </section>
+
+    <section class="section" style="background-color: #ffffff">
+      <div class="container has-text-centered">
+        <div class="buttons is-centered">
+          <a
+            class="button is-primary is-large"
+            href="https://github.com/Celechron/Celechron"
+            style="background-color: #66aaf5"
+          >
+            <i
+              class="fa fa-github"
+              style="font-size: 1.5em; margin: 0.15em 0.3em 0 0"
+            ></i
+            >前往项目 GitHub 仓库
+          </a>
+        </div>
+        <div class="buttons is-centered">
+          <a
+            class="button is-primary is-large"
+            href="https://github.com/Celechron/Celechron/releases"
+            style="background-color: #66aaf5"
+            >前往安装包地址
+          </a>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="card-content has-text-centered">
-    <p>
-      <a href="https://github.com/Celechron/Celechron"><strong>Celechron</strong></a> 采用
-      <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a> 许可证开源。本网页内容采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a> 协议授权。
-    </p>
-  </div>
-</section>
-</body>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <a href="https://github.com/Celechron/Celechron"
+            ><strong>Celechron</strong></a
+          >
+          采用
+          <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0</a>
+          许可证开源。本网页内容采用
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+            >CC BY NC SA 4.0</a
+          >
+          协议授权。
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
